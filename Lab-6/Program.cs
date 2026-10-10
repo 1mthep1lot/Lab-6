@@ -11,6 +11,12 @@
             Employee employee3 = new Employee(3, "Ted", "Male", 55000);
             Employee employee4 = new Employee(4, "Anna", "Female", 70000);
             Employee employee5 = new Employee(5, "Nate", "Male", 65000);
+
+            employees.Push(employee1);
+            employees.Push(employee2);
+            employees.Push(employee3);
+            employees.Push(employee4);
+            employees.Push(employee5);  
         }
     }
 }
