@@ -57,7 +57,8 @@
 
             }
 
-            //Check if employee number 3 is in the stack
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Check if Employee3 is in the Stack");
             if (employees.Contains(employee3))
             {
                 Console.WriteLine($"Emp3: {employee3.Name} is in the stack.");
@@ -69,6 +70,9 @@
              
 
             Console.WriteLine();
+
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Part 2 - List");
 
             List<Employee> employee = new List<Employee>();
 
@@ -88,11 +92,16 @@
                 Console.WriteLine($"Emp2: {employee2.Name} is not in the list.");
             }
 
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Find - first Male");
 
             Employee? FirstMale = employee.Find(e => e.Gender == "Male");
             Console.WriteLine($"{FirstMale.Id} - {FirstMale.Name} - {FirstMale.Gender} - {FirstMale.Salary}");
 
             Console.WriteLine();
+
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Find all Males");
 
 
             List<Employee> allMales = employee.FindAll(a => a.Gender == "Male");  
