@@ -24,6 +24,26 @@
                 Console.WriteLine($"Items left in the Stack = {employees.Count}");
             }
 
+
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Retrieve using Pop Method");
+
+            while (employees.Count > 0)
+            {
+                Employee emp = employees.Pop();
+
+                Console.WriteLine($"{emp.Id} - {emp.Name} - {emp.Gender} - {emp.Salary}");
+
+                Console.WriteLine($"Items left in the Stack = {employees.Count}");
+            }
+
+            employees.Push(employee1);
+            employees.Push(employee2);
+            employees.Push(employee3);
+            employees.Push(employee4);
+            employees.Push(employee5);
+
+
         }
     }
 }
