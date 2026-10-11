@@ -26,7 +26,7 @@
 
 
             Console.WriteLine("----------------------------");
-            Console.WriteLine("Retrieve using Pop Method");
+            Console.WriteLine("Retrieve Using Pop Method");
 
             while (employees.Count > 0)
             {
@@ -44,6 +44,18 @@
             employees.Push(employee5);
 
 
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Retrieve Using Peek Method");
+
+            for (int i = 0; i < 2; i++)
+            {
+                Employee emp = employees.Peek();
+
+                Console.WriteLine($"{emp.Id} - {emp.Name} - {emp.Gender} - {emp.Salary}");
+
+                Console.WriteLine($"Items left in the Stack = {employees.Count}");
+
+            }
         }
     }
 }
