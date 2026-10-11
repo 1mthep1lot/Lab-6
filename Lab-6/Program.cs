@@ -70,7 +70,13 @@
 
             Console.WriteLine();
 
-            List<Employee> employees = new List<Employee>();
+            List<Employee> employee = new List<Employee>();
+
+            employee.Add(employee1);
+            employee.Add(employee2);
+            employee.Add(employee3);
+            employee.Add(employee4);
+            employee.Add(employee5);
 
 
 
