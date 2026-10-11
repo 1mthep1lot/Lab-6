@@ -16,7 +16,14 @@
             employees.Push(employee2);
             employees.Push(employee3);
             employees.Push(employee4);
-            employees.Push(employee5);  
+            employees.Push(employee5);
+
+            foreach (Employee emp in employees)
+            {
+                Console.WriteLine($"{emp.Id} - {emp.Name} - {emp.Gender} - {emp.Salary}");
+                Console.WriteLine($"Items left in the Stack = {employees.Count}");
+            }
+
         }
     }
 }
