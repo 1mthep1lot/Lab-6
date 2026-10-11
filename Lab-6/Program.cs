@@ -56,6 +56,22 @@
                 Console.WriteLine($"Items left in the Stack = {employees.Count}");
 
             }
-        }
+
+            //Check if employee number 3 is in the stack
+            if (employees.Contains(employee3))
+            {
+                Console.WriteLine($"Emp3: {employee3.Name} is in the stack.");
+            }
+            else
+            {
+                Console.WriteLine($"Emp3: {employee3.Name} is not in the stack.");   
+            }
+             
+
+            Console.WriteLine();
+
+            
+
+            }
     }
 }
