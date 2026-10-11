@@ -94,11 +94,18 @@
 
             Console.WriteLine();
 
+
+            List<Employee> allMales = employee.FindAll(a => a.Gender == "Male");  
             
-
-
-
+            foreach (Employee emp in allMales)
+            {
+                Console.WriteLine($"{emp.Id} - {emp.Name} - {emp.Gender} - {emp.Salary}");
 
             }
+
+
+
+
+        }
     }
 }
