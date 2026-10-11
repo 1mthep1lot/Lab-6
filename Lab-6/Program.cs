@@ -79,7 +79,15 @@
             employee.Add(employee5);
 
 
+            if (employee.Contains(employee2))
+            {
+                Console.WriteLine($"Emp2: {employee2.Name} is in the list.");
+            }
+            else
+            {
+                Console.WriteLine($"Emp2: {employee2.Name} is not in the list.");
 
-        }
+
+            }
     }
 }
