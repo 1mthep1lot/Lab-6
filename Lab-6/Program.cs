@@ -89,6 +89,16 @@
             }
 
 
+            Employee? FirstMale = employee.Find(e => e.Gender == "Male");
+            Console.WriteLine($"{FirstMale.Id} - {FirstMale.Name} - {FirstMale.Gender} - {FirstMale.Salary}");
+
+            Console.WriteLine();
+
+            
+
+
+
+
             }
     }
 }
